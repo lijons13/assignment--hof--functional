@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="assignment4.png" alt="">
+    <script>
+        const books=[
+            {   author:"lijo",
+                publishedYear:2002},
+            {
+                author:"gambardella",
+                publishedYear:2003
+            },
+            {
+                author:"manu",
+                publishedYear:1999
+            },
+            {
+                author:"rahu",
+                publishedYear:2010
+            },
+            {
+                author:"seven",
+                publishedYear:2014
+            }
+    ]
+    console.log(books)
+
+    const filtredBook=books.filter((book)=>{ return book.publishedYear>=2010})
+    console.log(filtredBook);
+    const result=filtredBook.map((filterBook)=>{return {...filterBook,author:filterBook.author.toUpperCase()}
+})
+    console.log(result)
+    </script>
+</body>
+</html>
+<!-- map((book)=>{book.author.toUpperCase()}) -->
+<!-- filter((book)=>{ return book.publishedYear>=2010}) -->

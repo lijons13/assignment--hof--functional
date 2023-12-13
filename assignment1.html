@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="assignment1.png" alt="">
+<!-- <form action="">
+    <input type="text" id="txt">
+    <br>
+    <br>
+    <input type="button" value="click me" id="btn">
+</form>
+<p id="demo"></p> -->
+    <script>
+
+
+
+    let input="hello world";
+
+    const reverseString=(inputstring)=>{
+        return inputstring.split("").reverse().join("");
+
+    }
+    const reverseWithDelay=(inputstring)=>{
+        setTimeout(()=>{const reversed=reverseString(inputstring);
+            console.log(reversed)
+        },2000)
+        
+        
+    }
+    reverseWithDelay(input)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // const msg=document.querySelector("#txt");
+        // const btn1=document.querySelector("#btn");
+        // const para=document.querySelector("#demo")
+
+
+
+        
+        // // reverseFunction("hello")
+        // // setTimeout(reverseFunction,10000)
+
+
+
+        // btn1.addEventListener("click",setTimeout( reverseFunction=()=>{
+        //     const textMsg=document.querySelector("#txt").value;
+        //     const textMsg2=textMsg.split("");
+        //     const textMsg3=textMsg2.reverse();
+        //     const finalTextMsg=textMsg3.join("")
+
+
+        //     console.log(finalTextMsg);
+
+        //     para.innerHTML=finalTextMsg;
+        // },100))
+
+
+
+
+
+        // // btn1.addEventListener("click",setTimeout(()=>{
+        // //     // console.log("click")
+        // //     const textMsg=document.querySelector("#txt").value;
+        // //     const textMsg2=textMsg.split("");
+        // //     const textMsg3=textMsg2.reverse();
+        // //     const finalTextMsg=textMsg3.join("")
+
+
+        // //     console.log(finalTextMsg);
+
+        // //     para.innerHTML=finalTextMsg;
+
+        // // }),1000)
+   </script>
+</body>
+</html>

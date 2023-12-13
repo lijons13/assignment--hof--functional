@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="assignment5.png" alt="">
+    <script>
+        const urlPattern= /^(https?:\/\/)[a-zA-Z0-9\-._~:/?#[\]@!$&'()*+,;=%]+[.][a-zA-Z]+$/;
+
+        const isValidURL=(input)=>{
+            if(urlPattern.test(input)){
+                console.log(`${input} is valid url`)
+            }
+            else{
+                console.log(`${input} is not valid url`)
+            }
+        }
+        isValidURL("lijo.bs")
+        isValidURL("http://lijons.com")
+    </script>
+    
+</body>
+</html>

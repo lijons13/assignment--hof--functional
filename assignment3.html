@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="assignment3.png" alt="">
+    <h1>assignment3</h1>
+    <script>
+        const items=[
+            {item:"tommato",priceUSD:35},
+            {item:"fish",priceUSD:23},
+            {item:"carrots", priceUSD: 47},
+            {item:"peace",priceUSD:10000}
+        ];
+       const exchangeRate=80;
+       
+
+    //    const priceINR=items.map((item)=>{
+    //      return item.priceUSD*exchangeRate;
+    //    })
+    //    console.log(priceINR)
+
+    const convertedINR=(priceInUSD)=>{
+        return priceInUSD*exchangeRate;
+
+    }
+    const priceInINR=items.map((item)=>{
+        return{...item,priceINR:convertedINR(item.priceUSD)}
+    })
+    console.log(priceInINR)
+    </script>
+</body>
+</html>

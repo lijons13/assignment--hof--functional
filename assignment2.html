@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="assignment2.png" alt="">
+    <script>
+        const randomNumber=()=>{
+            return Math.floor(Math.random()*100);
+        }
+        const randomWithDelay=(delayInSecond)=>{
+            console.log(`random number will generate in ${delayInSecond} second`)
+
+            let countdown=delayInSecond;
+
+            countdownIntervel=setInterval(() => {
+                console.log(`tic tic ${countdown}`)
+                countdown--;
+
+                if(countdown===0){
+                    clearInterval(countdownIntervel);
+                    const random=randomNumber();
+                    console.log(`random number is ${random}`)
+                }
+
+            },1000);
+
+        }
+        randomWithDelay(5)
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+function generateRandomNumber() {
+    return Math.floor(Math.random() * 100);
+}
+
+
+function generateRandomNumberWithDelay(delayInSeconds) {
+    console.log(`Generating a random number after a delay of ${delayInSeconds} seconds...`);
+    let countdown = delayInSeconds;
+    const countdownInterval = setInterval(() => {
+        console.log(`${countdown} seconds remaining...`);
+        countdown--;
+
+        if (countdown === 0) {
+            clearInterval(countdownInterval);
+            const randomNumber = generateRandomNumber();
+            console.log(`Random number generated: ${randomNumber}`);
+        }
+    }, 1000);
+}
+
+generateRandomNumberWithDelay(5); -->

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="assignment6.png" alt="" style="width:1000px;">
+    <script>
+        const linkedinProfileRegex = /^https:\/\/www\.linkedin\.com\/in\/[a-zA-Z0-9_-]{5,30}[a-zA-Z0-9]\/$/;
+       function validLinkedinURL(linkedinProURL){
+            if(linkedinProfileRegex.test(linkedinProURL)){
+                console.log(`${linkedinProURL} valid URL `)
+            }
+            else{
+                console.log(`${linkedinProURL} not valid URL`)
+            }
+       } 
+       validLinkedinURL('https://www.linkedin.com/in/mithun-s-83a8a3186/');
+       validLinkedinURL("https://www.lin.com/")
+    </script>
+    
+</body>
+</html>
